@@ -10,8 +10,10 @@ const nextConfig = {
     unoptimized: true,
   },
   experimental: {
-    optimizeCss: false,
+    optimizeCss: false, // 🚫 desactiva el minificador
+    // 🧩 fuerza a Next a usar PostCSS normal
+    legacyBrowsers: true,
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

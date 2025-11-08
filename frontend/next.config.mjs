@@ -9,6 +9,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
+  experimental: {
+    optimizeCss: false, // 🚫 Desactiva LightningCSS (soluciona el error en Vercel)
+  },
+};
 
-export default nextConfig
+module.exports = nextConfig;
